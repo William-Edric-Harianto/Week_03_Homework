@@ -13,6 +13,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableLongStateOf
 import kotlinx.coroutines.delay
 import kotlin.time.Duration.Companion.milliseconds
+
 val testAmount = 3
 @Composable
 fun reactionTestView() {
@@ -43,7 +44,7 @@ fun reactionTestView() {
                 }
             )
             LaunchedEffect(key1 = appState) {
-                delay((500L..4500L).random().milliseconds)
+                delay((500..4500L).random().milliseconds)
                 appState = AppState.GO
             }
         }
