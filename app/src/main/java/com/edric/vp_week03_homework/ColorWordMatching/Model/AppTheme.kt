@@ -20,23 +20,30 @@ internal object AppTheme {
     val backgroundColor = Color(0xFFFAFAFA)
     val buttonBackgroundColor = Color(0xFFD4DCDF)
     val buttonForegroundColor = Color(0xFF3A4750)
+    val defaultTextColor = Color(0xFF3A4750)
     val h1Style = TextStyle(
-        fontSize = 36.sp,
+        fontSize = 42.sp,
         fontWeight = FontWeight.Normal,
         textAlign = TextAlign.Center,
-        color = Color(0xFF3A4750)
+        color = defaultTextColor
     )
     val h2Style = TextStyle(
         fontSize = 24.sp,
         fontWeight = FontWeight.Normal,
         textAlign = TextAlign.Center,
-        color = Color(0xFF3A4750)
+        color = defaultTextColor
     )
     val h3Style = TextStyle(
-        fontSize = 18.sp,
+        fontSize = 16.sp,
         fontWeight = FontWeight.Normal,
         textAlign = TextAlign.Center,
-        color = Color(0xFF3A4750)
+        color = defaultTextColor
+    )
+    val h4Style = TextStyle(
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Normal,
+        textAlign = TextAlign.Center,
+        color = defaultTextColor
     )
     val buttonStyle: ButtonColors
         @Composable
@@ -46,7 +53,7 @@ internal object AppTheme {
         )
     val buttonTextStyle = TextStyle(
         fontSize = 18.sp,
-        fontWeight = FontWeight.Bold
+        fontWeight = FontWeight.Normal
     )
     @Composable
     fun buttonText(text: String){
