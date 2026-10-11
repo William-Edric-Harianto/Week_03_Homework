@@ -11,7 +11,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.edric.vp_week03_homework.ColorWordMatching.Model.AppState
 import com.edric.vp_week03_homework.ColorWordMatching.Model.AppTheme
@@ -26,7 +25,6 @@ import kotlin.time.Duration.Companion.seconds
 
 @Composable
 fun colorWordMatchingView() {
-    val context = LocalContext.current
     var bestScore by rememberSaveable { mutableIntStateOf(0) }
     var appState by rememberSaveable { mutableStateOf(AppState.START) }
     var score by rememberSaveable { mutableIntStateOf(0) }

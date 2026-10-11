@@ -39,12 +39,7 @@ internal object AppTheme {
         textAlign = TextAlign.Center,
         color = defaultTextColor
     )
-    val h4Style = TextStyle(
-        fontSize = 14.sp,
-        fontWeight = FontWeight.Normal,
-        textAlign = TextAlign.Center,
-        color = defaultTextColor
-    )
+
     val buttonStyle: ButtonColors
         @Composable
         get() = ButtonDefaults.buttonColors(
