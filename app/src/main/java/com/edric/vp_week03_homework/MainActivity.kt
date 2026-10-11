@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             VP_Week03_HomeworkTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) {
-                    clickerGameView()
+//                    clickerGameView()
                 }
             }
         }

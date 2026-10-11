@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 import androidx.compose.ui.graphics.Color
 import com.edric.vp_week03_homework.R
 
-enum class Rank(
+internal enum class Rank(
     val cutOff: Long,
     val message: String,
     val backgroundColor: Color,
